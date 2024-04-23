@@ -53,8 +53,12 @@ header .head .slider .slide:nth-child(3) {
     }
 }
 
+header .head .menubar {
+    height: 11.11vh;
+}
+
 header .head .logo {
-    top: 3vh;
+    top: 5.5vh;
     left: 57.53vw;
     transform: translate(-50%, -50%);
     width: 28.53vw;
@@ -63,10 +67,10 @@ header .head .logo {
 
 header .head .btn_menu {
     position: absolute;
-    top: 1.5rem;
+    top: 3.5rem;
     left: 90vw;
     background: url(../images/btn_menu.png) no-repeat;
-    width: 6.66vw;
+    width: 6.75vw;
     height: 4.44vh;
 }
 
@@ -75,8 +79,8 @@ header .head .menu ul {
     flex-direction: column;
 /*    justify-content: center;
     align-items: center;*/
-    outline: solid 1px #fff;
-    top: 5.5vh;
+    border-top: solid 1px #fff;
+    top: 11.2vh;
     left: 0;
     padding-top: 0;
     background: rgba(0, 0, 0, 0.5);
@@ -90,9 +94,11 @@ header .head .menu ul li a {
     display: inline-block;
     margin-left: 0;
     width: 100vw;
-    height: 15.28vh;
+    height: 10vh;
     text-align: center;
-    line-height: 15.28vh;
+    line-height: 10vh;
+    border-bottom: solid 1px #fff;
+    font-size: 4.88vw;
 }
 
 header .head .menu ul li:nth-child(6) a {
