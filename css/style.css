@@ -2,6 +2,9 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+div {
     box-sizing: border-box;
 }
 
@@ -72,7 +75,7 @@ header .head .menubar {
     /* top: 0; */
     /* left: 0; */
     width: /*120rem*/100%;
-    height: 4.375rem;
+    height: 70px;
     background-color: #fff;
     opacity: 20%;
 }
@@ -90,7 +93,7 @@ header .head .content {
 }
 
 header .head .content h1 {
-    font-size: 2.187rem;
+    font-size: 50PX;
     margin-bottom: 0.5rem;
 }
 
@@ -100,7 +103,7 @@ header .head .content h2 {
 }
 
 header .head .content p {
-    font-size: 0.75rem;
+    font-size: 14px;
 }
 
 header .head .content p:last-child {
@@ -125,7 +128,7 @@ header .head .logo {
 header .head .menu ul {
     position: absolute;
     top: 0;
-    right: 2rem;
+    right: 128px;
     display: flex;
     padding-top: 1.5rem;
 }
@@ -140,6 +143,10 @@ header .head .menu ul li:nth-child(4) a {
     margin-right: 15.625rem;
 }
 
+header .head .menu ul li:nth-child(5) a {
+    margin-left: 0;
+}
+
 header .head .menu ul li:nth-child(6) a {
     margin-left: 1.562rem;
 }
@@ -152,7 +159,6 @@ header .head .menu ul li a i {
 
 .layer1 {
     margin-left: 100px;
-    margin-right: 100px;
 }
 
 .layer1 h2 {
@@ -211,15 +217,15 @@ header .head .menu ul li a i {
     display: flex;
     color: #fff;
     line-height: 1;
-    margin-top: 70px;
+    margin: 70px 0 200px 0;
 }
 
 /* layer2 */
 
 .layer2 {
-    margin: 100px 200px;
+    margin: 0 auto;
+    width: 1800px;
     height: 900px;
-    outline: solid 1px red;
     background: url(../images/page3_bg_opacity.png) no-repeat #494949 center;
 }
 
@@ -243,13 +249,17 @@ header .head .menu ul li a i {
 
 .layer2 .layer2_flex2 {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 300px;
+    justify-content: center;
+    margin-top: 330px;
     color: #fff;
 }
 
 .layer2 .layer2_flex2 div {
     text-align: center;
+}
+
+.layer2 .layer2_flex2 div:nth-child(2) {
+    margin: 0 100px;
 }
 
 .layer2 .layer2_flex2 img {
@@ -259,4 +269,369 @@ header .head .menu ul li a i {
 
 .layer2 .layer2_flex2 p {
     width: 300px;
+    margin-top: 20px;
+}
+
+
+/* layer3 */
+
+.layer3 {
+    /* outline: solid 1px red; */
+    margin: 100px 200px 300px;
+    color: #fff;
+}
+
+.layer3 h2 {
+    font-size: 40px;
+}
+
+.layer3 h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.layer3 .layer3_txt1 {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.layer3 .layer3_txt1 div {
+    border-bottom: solid 1px #fff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.layer3 .layer3_txt1 p {
+    padding-left: 20px;
+}
+
+.layer3 .layer3_flex1 {
+    /* outline: solid 1px blue; */
+    width: 1000px;
+    display: flex;
+    flex-flow: wrap;
+    /*justify-content: space-between;*/
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.layer3 .layer3_flex1 .box1,
+.layer3 .layer3_flex1 .box2 {
+    margin-bottom: 50px;
+}
+
+.layer3 .layer3_flex1 .box2 {
+    margin-left: 135px;
+}
+
+.layer3 .layer3_flex1 .box4 {
+    margin-left: 153px;
+}
+
+.layer3 .layer3_flex1 img {
+    width: 70px;
+    height: 70px;
+}
+
+.layer3 .layer3_flex1 h3 {
+    line-height: 1; /* 라인 초기화 */
+    margin-bottom: 10px;
+}
+
+.layer3 .layer3_flex1 .box_flex {
+    display: flex;
+    align-items: center;
+}
+
+.layer3 .layer3_flex1 .box_flex .img_bd {
+    border-right: 2px solid #fff;
+    padding-right: 10px;
+    margin-right: 7px;
+}
+
+.layer3 .layer3_flex1 .box_flex:nth-child(1) div.img_bd {
+    height: 113px;
+    line-height: 7;
+}
+
+.layer3 .layer3_flex1 .box_flex:nth-child(2) div.img_bd {
+    height: 75px;
+}
+
+.layer3 .layer3_flex1 .box_flex:nth-child(3) div.img_bd {
+    height: 75px;
+}
+
+.layer3 .layer3_flex1 .box_flex:nth-child(4) div.img_bd {
+    height: 75px;
+}
+
+/* footer */
+
+footer {
+    height: 140px;
+    background: #000;
+}
+
+footer img {
+    margin-right: 20px;
+    padding-bottom: 3px;
+}
+
+footer .ft_flex {
+    /* outline: solid 1px red; */
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    padding: 50px 0 0 700px;
+}
+
+footer .ft_flex p {
+    font-size: 14px;
+}
+
+footer .ft_flex address {
+    font-size: 12px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #fff;
+}
+
+footer .ft_flex span {
+    font-size: 13px;
+}
+
+
+/* company page */
+
+    /* company header */
+header .comp_head {
+    background: url(../images/bg_img1.jpg) no-repeat center / cover; 
+    width: 100%;
+    height: 1084px;
+} 
+
+header .comp_head .menubar {
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    width: /*120rem*/100%;
+    height: 70px;
+    background-color: #fff;
+    opacity: 20%;
+}
+
+header .comp_head .content {
+    position: absolute;
+    top: 33%;
+    left: 70%;
+    transform: translate(-50%, -50%);                                                                   
+    color: white;
+    z-index: 2;
+    text-align: right;
+    letter-spacing: 0.03rem;
+}
+
+header .comp_head .content h1 {
+    font-size: 50PX;
+}
+
+header .comp_head .content h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+header .comp_head .content p {
+    font-size: 16px;
+}
+
+header .comp_head .logo {
+    position: absolute;
+    top: 1.2rem;
+    left: 400px;
+    padding-top: 1.5rem;
+    width: 8.937rem;
+    height: 1.625rem;
+    background: url(../images/logo1.png) no-repeat;
+}
+
+header .comp_head .menu ul {
+    position: absolute;
+    top: 0;
+    right: 128px;
+    display: flex;
+    padding-top: 1.5rem;
+}
+
+header .comp_head .menu ul li a {
+    margin-left: 2.5rem;
+    color: #fff;
+    font-weight: 100;
+}
+
+header .comp_head .menu ul li:nth-child(4) a {
+    margin-right: 15.625rem;
+}
+
+header .comp_head .menu ul li:nth-child(5) a {
+    margin-left: 0;
+}
+
+header .comp_head .menu ul li:nth-child(6) a {
+    margin-left: 1.562rem;
+}
+
+header .comp_head .menu ul li a i {
+    margin-right: 0.312rem;
+}
+
+/* company section */
+
+    /* company layer1 */
+.comp_layer1 {
+    text-align: center;
+    color: #fff;
+    padding: 100px 0 200px 0;
+}
+
+.comp_layer1 h2, h3 {
+    font-size: 30px;
+}
+
+.comp_layer1 h2 {
+    letter-spacing: 8px;
+    font-weight: 500;
+}
+
+.comp_layer1 h3 {
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #a6a6a6;
+}
+
+.comp_layer1 .comp_logo {
+    margin-bottom: 50px;
+}
+
+.comp_layer1 .comp_txt1 {
+    margin-bottom: 150px;
+}
+
+.comp_layer1 .comp_txt2 .comp_img {
+    margin: 20px 0 40px 0;
+}
+
+.comp_layer1 .comp_txt2 p {
+    color: #ababab;
+}
+
+.comp_layer1 .comp_txt2 p:nth-of-type(4) {
+    margin-top: 20px;
+}
+
+/* company layer2 */
+
+.comp_layer2 {
+    margin: 0 auto;
+    background-color: #494949;
+    width: 1800px;
+    height: 1500px;
+    text-align: center;
+    padding: 100px 0 200px 0;
+    color: #fff;
+}
+
+.comp_layer2 h2 {
+    letter-spacing: 8px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.comp_layer2 p {
+    color: #d3d3d3;
+}
+
+.comp_layer2 span {
+    font-weight: bold;
+    color: #fff;
+}
+
+.comp_layer2 .comp_txt3, 
+.comp_txt4 {
+    margin-bottom: 150px;
+}
+
+.comp_layer2 .comp_txt3 .bd_img, 
+.comp_txt4 .bd_img {
+    margin-bottom: 10px;
+}
+
+.comp_layer2 .comp_txt5 .bd_img {
+    margin-bottom: 50px;
+}
+
+.comp_layer2 .comp_txt5 .bd_img img {
+    width: 435px;
+    height: 6px;
+}
+
+
+/* company layer3 */
+
+.comp_layer3 {
+    text-align: center;
+    color: #fff;
+    margin: 150px 0;
+}
+
+.comp_layer3 h2 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.comp_layer3 .comp_txt6 {
+    margin-bottom: 60px;
+}
+
+.comp_layer3 .comp_txt6 .bd_img img {
+    width: 420px;
+    height: 6px;
+}
+
+.comp_layer3 .comp_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.comp_layer3 .comp_flex1 {
+    display: flex;
+    align-items: center;
+    width: 750px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.comp_layer3 .comp_flex1 p {
+    font-weight: 500;
+}
+
+.comp_layer3 .comp_flex1 span {
+    font-size: 15px;
+    color: #c0c0c0;
+}
+
+.comp_layer3 .comp_flex1 div:nth-child(2) {
+    margin: 0 10px;
+}
+
+.comp_layer3 .comp_flex1 div:nth-child(3) {
+    text-align: left;
+}
+
+.comp_layer3 .comp_flex1:nth-child(3) {
+}
+
+.comp_layer3 .comp_flex1:last-child {
+    padding-bottom: 0;
 }
